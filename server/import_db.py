@@ -75,9 +75,8 @@ def import_csv(filepath, name, columns):
     print(f"\n[✓] Done! {row_count:,} rows imported in {elapsed:.1f}s")
     print(f"    DB: {db_path} ({os.path.getsize(db_path)/1024/1024:.1f} MB)")
 
-# Import boulanger.csv
 import_csv(
-    r"H:\databases\boulanger.csv",
-    "boulanger",
+    "your_file.csv",
+    "your_table",
     ["nom", "email", "telephone", "adresse", "complement", "code_postal", "ville", "pays"]
 )
